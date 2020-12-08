@@ -3,3 +3,22 @@ html, body {
 }
 
 body { margin: 0 }
+
+footer{
+    text-align: center;
+    padding: 0px;
+    background-color: #060606;
+    color: white;
+    position: sticky;
+    bottom: 0px;
+
+    p{
+        font-size: 11px;
+
+        a{
+            color: #3ba0a7;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+}

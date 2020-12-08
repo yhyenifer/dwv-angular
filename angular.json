@@ -34,10 +34,14 @@
               }
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/theme.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+          ]
           },
           "configurations": {
             "production": {
@@ -140,5 +144,8 @@
       }
     }
   },
-  "defaultProject": "dwv-angular"
+  "defaultProject": "dwv-angular",
+  "cli": {
+    "analytics": "ab43ebef-2cf6-4001-8303-57811ed06002"
+  }
 }
