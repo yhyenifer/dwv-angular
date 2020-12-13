@@ -1,5 +1,8 @@
+
 <div class="page">
+
   <div class="container">
+ 
     <div class="left">
       <div>
         <img style="width: 275px;" src="../../assets/icons/acceso.png">
@@ -8,6 +11,9 @@
       <div class="eula">Sistema del Centro de Especialistas para la visualización de imágenes DICOM</div>
     </div>
     <div class="right">
+      <div id="error" #error class="alert alert-danger hidden" role="alert">
+        <strong>¡Error!</strong> {{message}}
+      </div>
       <svg viewBox="0 0 320 300" class="line-grad">
         <defs>
           <linearGradient 
@@ -32,15 +38,16 @@
       </svg>
       <div class="form">
         <label for="usuario">Usuario</label>
-        <input type="usuario" id="usuario" (focus)="onFocusEvent('user')">
+        <input type="usuario" id="usuario" [(ngModel)]="usuario"  (focus)="onFocusEvent('user')">
         <label for="contrasena">Contraseña</label>
-        <input type="contrasena" id="contrasena" (focus)="onFocusEvent('pass')">
+        <input type="password" id="contrasena" autocomplete="false" [(ngModel)]="pass"  (focus)="onFocusEvent('pass')">
         <br>
-        <div class="box-btn-login"><button  type="button" class="btn btn-primary">Acceder</button></div>
+        <div class="box-btn-login"><button  type="button" class="btn btn-primary" (click)="login()">Acceder</button></div>
         
       </div>
     </div>
   </div>
 </div>
+
 
 
