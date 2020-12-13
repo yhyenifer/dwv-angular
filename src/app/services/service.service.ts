@@ -22,7 +22,7 @@ export class ServiceService{
 
   constructor(private http: HttpClient){ 
     // url para uso productivo
-    this.urlBase = 'https://cdedicom.bhxq-tl6g.accessdomain.com/api/';
+    this.urlBase = 'http://cdedicom.bhxq-tl6g.accessdomain.com/api/';
     // url para uso de proxy local
     //this.urlBase = 'api';
  
